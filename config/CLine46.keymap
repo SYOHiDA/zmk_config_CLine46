@@ -33,6 +33,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        macro1: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_3 &kp LS(D) &kp LS(U) &kp LS(A) &kp N &kp KP_NUMBER_4 &kp KP_NUMBER_2 &kp H &kp KP_NUMBER_8 &kp KP_NUMBER_7 &kp KP_NUMBER_3 &kp KP_NUMBER_3>;
+            label = "MACRO1";
+        };
     };
 
     behaviors {
@@ -72,7 +79,7 @@
 &kp ESCAPE  &kp LG(NUMBER_4)  &none             &kp LC(LG(NUMBER_1))  &none  &none                  &kp LC(LA(Y))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none            &trans
 &none       &kp LA(LC(A))     &kp LG(NUMBER_3)  &none                 &none  &none                  &none          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LC(TAB)      &trans
 &none       &none             &none             &kp LS(LG(NUMBER_2))  &none  &none                  &kp KP_N0      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LC(LS(TAB))  &trans
-            &kp LA(F4)        &none             &none                 &none  &none  &none    &none  &none                                            &none            &kp END
+            &kp LA(F4)        &none             &none                 &none  &none  &none    &none  &none                                            &none            &macro1
             >;
         };
 
