@@ -15,7 +15,7 @@
     combos {
         compatible = "zmk,combos";
 
-        left_click {
+        lclk_r {
             bindings = <&mkp LCLK>;
             key-positions = <19 20>;
             timeout-ms = <40>;
@@ -24,7 +24,7 @@
             layers = <1 2 3 0>;
         };
 
-        right_click {
+        rclk_r {
             bindings = <&mkp RCLK>;
             key-positions = <21 20>;
             timeout-ms = <40>;
@@ -33,7 +33,7 @@
             layers = <1 2 3 0>;
         };
 
-        middle_click {
+        mclk_r {
             bindings = <&mkp MCLK>;
             key-positions = <21 19>;
             timeout-ms = <40>;
@@ -42,7 +42,7 @@
             layers = <1 2 3 0>;
         };
 
-        forward {
+        mb5_r {
             bindings = <&mkp MB5>;
             key-positions = <32 31>;
             timeout-ms = <40>;
@@ -51,12 +51,57 @@
             layers = <1 2 3 0>;
         };
 
-        back {
+        mb4_r {
             bindings = <&mkp MB4>;
             key-positions = <32 33>;
             timeout-ms = <40>;
             require-prior-idle-ms = <80>;
             slow-release;
+            layers = <1 2 3 0>;
+        };
+
+        rclk_l {
+            bindings = <&mkp RCLK>;
+            key-positions = <15 16>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <80>;
+            layers = <1 2 3 0>;
+        };
+
+        lclk_l {
+            bindings = <&mkp LCLK>;
+            key-positions = <14 15>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <80>;
+            layers = <1 2 3 0>;
+        };
+
+        mclk_l {
+            bindings = <&mkp MCLK>;
+            key-positions = <14 16>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <80>;
+            layers = <1 2 3 0>;
+        };
+
+        mb5_l {
+            bindings = <&mkp MB5>;
+            key-positions = <26 27>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <80>;
+            layers = <1 2 3 0>;
+        };
+
+        mb4_l {
+            bindings = <&mkp MB4>;
+            key-positions = <27 28>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <80>;
             layers = <1 2 3 0>;
         };
     };
